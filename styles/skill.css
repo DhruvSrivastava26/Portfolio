@@ -1,0 +1,133 @@
+
+
+.skills {
+    padding: 60px 10%;
+    text-align: center;
+    border-bottom: 1px solid gray;
+    margin-top: 20px;
+    padding-top: 0;
+    padding-bottom: 70px;
+    
+    
+}
+  
+.skills-title {
+   
+    background: linear-gradient(90deg, #ff64b1, #33247e,rgb(0, 145, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    
+}
+  
+.skills-intro {
+    font-size: 16px;
+    color: #cfcfe0;
+    margin: 0 auto 40px auto;
+    max-width: 850px;
+    text-align: center;
+    padding: 0 15px;
+    
+}
+  
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+  }
+  
+  .skill-card {
+    background: #1f2952;
+    border-radius: 16px;
+    padding: 25px;
+    min-width: 300px;
+    text-align: left;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease;
+  }
+  
+  .skill-card:hover {
+    transform: translateY(-8px);
+  }
+  
+  .skill-card h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #ff4da6;
+  }
+  
+  /* Progress Bars */
+  .skill {
+    margin-bottom: 18px;
+  }
+  
+  .skill span {
+    font-size: 14px;
+    display: block;
+    margin-bottom: 6px;
+  }
+  
+  .progress {
+    width: 100%;
+    background: #2a3566;
+    border-radius: 10px;
+    height: 10px;
+    overflow: hidden;
+  }
+  
+  .progress-bar {
+    height: 100%;
+    border-radius: 10px;
+  }
+  
+  .progress-bar.html {
+    width: 95%;
+    background: linear-gradient(90deg, #ff4da6, #7b61ff);
+  }
+  
+  .progress-bar.css {
+    width: 90%;
+    background: linear-gradient(90deg, #00e0ff, #7b61ff);
+  }
+  
+  .progress-bar.js {
+    width: 80%;
+    background: linear-gradient(90deg, #ffb347, #ff4da6);
+  }
+  
+  .progress-bar.react {
+    width: 75%;
+    background: linear-gradient(90deg, #61dafb, #7b61ff);
+  }
+  
+  /* Lists in Tools/Soft Skills */
+  .skill-card ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .skill-card li {
+    margin-bottom: 12px;
+    font-size: 15px;
+    color: #d0d0e1;
+  }
+  
+
+  @media (max-width: 992px) {
+    .skill-card {
+      flex: 1 1 45%; /* two per row, flexible */
+      max-width: 100%; 
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .skills-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .skill-card {
+      flex: 1 1 100%; /* one per row */
+      max-width: 90%;
+    }
+  }
